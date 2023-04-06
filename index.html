@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="infos">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="form-section">
+        <div class="description">
+          <span>Try it free 7 days </span> then $20/mo. thereafter
+        </div>
+        <form onsubmit="submitFc(event, this)">
+          <div class="input-box">
+            <input
+              type="text"
+              name="first-name"
+              id="name"
+              placeholder="First Name"
+              oninput="removeErrors(0)"
+              onblur="setBluBorder(0, this)"
+            />
+            <img src="./assets/icon-error.svg" alt="error icon" />
+          </div>
+          <div class="error-box">
+            <p class="error"></p>
+          </div>
+          <div class="input-box">
+            <input
+              type="text"
+              name="last-name"
+              id="surname"
+              placeholder="Last Name"
+              oninput="removeErrors(1)"
+              onblur="setBluBorder(1, this)"
+            />
+            <img src="./assets/icon-error.svg" alt="error icon" />
+          </div>
+          <div class="error-box">
+            <p class="error"></p>
+          </div>
+          <div class="input-box">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+              oninput="removeErrors(2)"
+              onblur="setBluBorder(2, this)"
+            />
+            <img src="./assets/icon-error.svg" alt="error icon" />
+          </div>
+          <div class="error-box">
+            <p class="error"></p>
+          </div>
+          <div class="input-box">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              oninput="removeErrors(3)"
+              onblur="setBluBorder(3, this)"
+            />
+            <img src="./assets/icon-error.svg" alt="error icon" />
+          </div>
+          <div class="error-box">
+            <p class="error"></p>
+          </div>
+          <button class="submit-btn" type="submit">
+            CLAIM YOUR FREE TRIAL
+          </button>
+          <p class="terms">
+            By clicking the button, you are agreeing to our
+            <span>Terms and Services</span>
+          </p>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
